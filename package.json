@@ -1,0 +1,36 @@
+{
+  "name": "cus-1172-final-project",
+  "version": "1.0.0",
+  "description": "vieo web server final project",
+  "main": "server.js",
+  "scripts": {
+    "devStart": "SESSION_SECRET=Secret nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raspraz2/CUS-1172-Final-Project.git"
+  },
+  "author": "Davon Raspberry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raspraz2/CUS-1172-Final-Project/issues"
+  },
+  "homepage": "https://github.com/Raspraz2/CUS-1172-Final-Project#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "fs": "^0.0.1-security",
+    "method-override": "^3.0.0",
+    "npm": "^9.2.0",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20"
+  }
+}

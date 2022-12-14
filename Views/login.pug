@@ -1,0 +1,13 @@
+doctype html
+
+h1 Login
+link(type="text/css" href='/logindesign.css' rel='stylesheet')
+form(action='/login' method='POST')
+  div
+    label(for='email') Email
+    input#email(type='email' name='email' required='')
+  div
+    label(for='password') password
+    input#password(type='password' name='password' required='')
+  button(type='submit') Login
+a(href='/register') Register

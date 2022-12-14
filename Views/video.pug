@@ -1,0 +1,15 @@
+h1 Video Title
+link(type="text/css" href='/videodesign.css' rel='stylesheet')
+form(action='/video/new_video' method='POST')
+  div
+    label(for='Video-Title') Video Title
+    input#Video-Title(type='text' name='Video-Title' required='' placeholder="Enter Video Title")
+  div
+    label(for='VideoLink') Video Link
+    input#Video-Link(type='text' name='VideoLink' required='' placeholder="Enter Video Link Here")
+  button(type='submit') Add New Video
+each video in videos
+    iframe(width='560' height='315' src=video title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+form(action='/logout')
+  button(type='submit') Log Out
+

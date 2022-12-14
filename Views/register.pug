@@ -1,0 +1,15 @@
+doctype html
+h1 Register
+link(type="text/css" href='/registerdesign.css' rel='stylesheet')
+form(action='/register' method='POST')
+  div
+    label(for='name>') Name
+    input#name(type='text' name='name' required='' placeholder="Enter your Name")
+  div
+    label(for='email') Email
+    input#email(type='email' name='email' required='' placeholder="Enter your Email")
+  div
+    label(for='password') Password
+    input#password(type='password' name='password' required='' placeholder="Enter your Password")
+  button(type='submit') Register
+a(href='/login') Login
